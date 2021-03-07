@@ -1,7 +1,6 @@
 :root {
-  --dark: #2a2a2a;
   --light: #fafafa;
-  --gray: #222222;
+  --white: #eeeeee;
 }
 
 * {
@@ -11,44 +10,51 @@
 }
 
 body {
-  background-color: var(--light);
-  font-family: sans-serif;
+  background-color: var(--white);
+  font-family: 'JetBrains Mono', monospace;
 }
 
-h1 {
-  color: var(--dark);
-}
-
-header {
-  background: var(--gray);
-
-  padding: 1.4rem 0.5rem;
-
+#container {
   display: flex;
+  justify-content: center;
+}
+
+#profile-box {
+  background-color: var(--light);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  
+  border-radius: 24px;
+  margin-top: 2rem;
+  width: 18rem;
+}
+
+#profile {
+  padding: 2rem;
+  flex-direction: column;
+  
   align-items: center;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
 }
 
-header nav ul li {
-  display: inline;
+#profile > img {
+  border-radius: 100%;
 }
 
-header nav ul li a {
-  text-decoration: none;
-  color: var(--light);
-
-  padding: 0.3rem;
+#profile > strong {
+  margin-top: 0.75rem;
 }
 
-.container {
-  margin: auto;
-  width: min(90vw, 800px);
+.data > span,
+.data > strong {
+  display: block;
+  margin: 0.75rem 0.25rem;
 }
 
-footer {
-  background: var(--gray);
-  color: var(--light);
-
-  padding: 1rem 0.5rem;
-  text-align: center;
+#info {
+  margin-top: 1rem;
+  flex-direction: column;
+  
+  display: flex;
+  align-items: left;
 }
