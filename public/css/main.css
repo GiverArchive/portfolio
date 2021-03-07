@@ -19,13 +19,14 @@ body {
   justify-content: center;
 }
 
-#profile-box {
+.content-box {
   background-color: var(--light);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
   
   border-radius: 24px;
-  margin-top: 2rem;
+  margin: 2rem 4rem;
   width: 18rem;
+  height: max-content;
 }
 
 #profile {
@@ -35,6 +36,21 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+#techs {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#tech-icons {
+  margin-top: 1rem;
+  display: flex;
+}
+
+#tech-icons > img {
+  border-radius: 25%;
 }
 
 #profile > img {
